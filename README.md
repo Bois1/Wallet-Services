@@ -19,4 +19,4 @@
 - Wallets are copied on load/save to avoid shared mutation.
 
 ## Running Tests
-`go test ./...`
+`go test service_test.go`
