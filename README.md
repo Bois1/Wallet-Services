@@ -1,4 +1,4 @@
-# Wallet Transfer Service Test Code
+# Wallet Transfer Service
 
 ## My Approach
 
