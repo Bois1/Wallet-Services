@@ -31,6 +31,7 @@ func TestWalletService_SuccessfulTransfer(t *testing.T) {
 func TestWalletService_InsufficientFunds(t *testing.T) {
 	repo := NewInMemoryWalletRepo()
 	repo.SaveWallet(context.Background(), &Wallet{ID: "1", Owner: "Babatunde", Balance: Money(100)})
+	repo.SaveWallet(context.Background(), &Wallet{ID: "2", Owner: "Bimbo", Balance: Money(0)})
 
 	service := NewWalletService(repo)
 
