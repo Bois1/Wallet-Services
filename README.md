@@ -9,7 +9,7 @@
 - Service is fully decoupled from storage implementation.
 
 ### Money Handling
-- Used `int64` to represent **cents** (smallest currency unit).
+- Used `int64` to represent **kobo** (smallest currency unit of Nigerian Naira).
 - Wrapped in `Money` type with validation (positive amounts only).
 - Avoids floating-point arithmetic entirely → no rounding errors.
 
@@ -19,4 +19,7 @@
 - Wallets are copied on load/save to avoid shared mutation.
 
 ## Running Tests
-`go test service_test.go`
+Run all tests with:
+
+```bash
+go test
